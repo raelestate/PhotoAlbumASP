@@ -3,79 +3,86 @@
 @{
 	ViewData["Title"] = "Home page";
 }
-<h2>Welcome to my Album</h2>
-<div class="album py-5 bg-light">
-	<div class="container">
-        <div class="album py-5 bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="~/Resources/images/100 Images/20 images of City/city1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary"><a class="nav-link text-dark" asp-area="" asp-page="/City">View Album</a></button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PhotoAlbum</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PhotoAlbum.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <h2>Welcome to my Album</h2>
+    <div class="album py-5 bg-light">
+	    <div class="container">
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" src="~/Resources/images/100 Images/20 images of City/city1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">City Album</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a class="nav-link text-dark" asp-area="" asp-page="/City">View Album</a></button>
+                                        </div>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="~/Resources/images/100 Images/20 images of Me/me1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary"><a class="nav-link text-dark" asp-area="" asp-page="/City">View Album</a></button>
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" src="~/Resources/images/100 Images/20 images of Me/me1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">"Me" Album</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a class="nav-link text-dark" asp-area="" asp-page="/City">View Album</a></button>
+                                        </div>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="~/Resources/images/100 Images/20 images of Nature/nature1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary"><a class="nav-link text-dark" asp-area="" asp-page="/City">View Album</a></button>
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" src="~/Resources/images/100 Images/20 images of Nature/nature1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Nature Album</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a class="nav-link text-dark" asp-area="" asp-page="/City">View Album</a></button>
+                                        </div>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="~/Resources/images/100 Images/20 images of nightsky/night1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary"><a class="nav-link text-dark" asp-area="" asp-page="/NightSky">View Album</a></button>
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" src="~/Resources/images/100 Images/20 images of nightsky/night1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Night Sky Album.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a class="nav-link text-dark" asp-area="" asp-page="/NightSky">View Album</a></button>
+                                        </div>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="~/Resources/images/100 Images/20 images of Sea/sea1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary"><a class="nav-link text-dark" asp-area="" asp-page="/City">View Album</a></button>
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" src="~/Resources/images/100 Images/20 images of Sea/sea1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Sea Album</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a class="nav-link text-dark" asp-area="" asp-page="/Sea">View Album</a></button>
+                                        </div>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
@@ -84,4 +91,5 @@
             </div>
         </div>
     </div>
-</div>
+</body>
+</html>

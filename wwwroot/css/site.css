@@ -16,9 +16,6 @@ html {
 body {
   margin-bottom: 60px;
 }
-p.card-text{
-    font-weight:700;
-}
-img.modalimage{
-    height: 700px;
+.night-image {
+    width: 25px;
 }
