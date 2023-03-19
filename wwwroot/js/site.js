@@ -80,3 +80,57 @@ if (typeof seaalbum === 'undefined') {
 }
 // Append the night sky divs to the night-sky container
 $('#sea-album').append(seaalbum.join(''));
+
+//Me
+// Check if Sea has already been declared
+if (typeof mealbum === 'undefined') {
+    // Declare nightSkyDivs as an array
+    var mealbum = [];
+    // Loop 20 times and push new divs to the array
+    for (var i = 1; i <= 20; i++) {
+        mealbum.push(`
+            <div class="col-md-4 mx-auto">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="./Resources/images/100 Images/20 images of Me/me${i}.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Me ${i}</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View Picture</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        `);
+    }
+}
+// Append the night sky divs to the night-sky container
+$('#me-album').append(mealbum.join(''));
+
+//Nature
+// Check if Sea has already been declared
+if (typeof naturealbum === 'undefined') {
+    // Declare nightSkyDivs as an array
+    var naturealbum = [];
+    // Loop 20 times and push new divs to the array
+    for (var i = 1; i <= 20; i++) {
+        naturealbum.push(`
+            <div class="col-md-4 mx-auto">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="./Resources/images/100 Images/20 images of Nature/nature${i}.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Nature ${i}</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View Picture</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        `);
+    }
+}
+// Append the night sky divs to the night-sky container
+$('#nature-album').append(naturealbum.join(''));
